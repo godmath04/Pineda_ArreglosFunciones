@@ -60,6 +60,7 @@ int main()
     }
     else
     {
+        printf("\n");
         printf("Las Matrices no se pueden sumar.\n");
     }
 
