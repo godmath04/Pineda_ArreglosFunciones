@@ -54,8 +54,9 @@ int main()
 
     if (fila == fila2 &&columna == columna2)
     {
-        printf("La suma de las matrices está dada por: \n");
-        sumaMat
+        printf("La suma de las matrices esta dada por: \n");
+        printf("\n");
+        sumaMatrices(MatrizA, MatrizB);
     }
     else
     {
