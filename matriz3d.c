@@ -9,21 +9,26 @@ en unos.*/
 
 int fila = 0, columna = 0, profundidad = 0;
 
-void tridifMatriz(int Matriz3D[profundidad][fila][columna]){
+void tridifMatriz(int Matriz3D[profundidad][fila][columna])
+{
     for (int k = 0; k < profundidad; k++)
     {
         for (int i = 0; i < fila; i++)
         {
             for (int j = 0; j < columna; j++)
             {
-                Matriz3D[k][i][j] = 0;
+                if (k == (profundidad - 1))
+                {
+                    Matriz3D[k][i][j] = 1;
+                }else{
+                    Matriz3D[k][i][j] = 0;
+                }
                 printf("%4d |", Matriz3D[k][i][j]);
             }
             printf("\n");
         }
         printf("\n");
     }
-    
 }
 
 int main()
