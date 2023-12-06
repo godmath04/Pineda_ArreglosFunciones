@@ -20,7 +20,9 @@ void tridifMatriz(int Matriz3D[profundidad][fila][columna])
                 if (k == (profundidad - 1))
                 {
                     Matriz3D[k][i][j] = 1;
-                }else{
+                }
+                else
+                {
                     Matriz3D[k][i][j] = 0;
                 }
                 printf("%4d |", Matriz3D[k][i][j]);
@@ -34,6 +36,7 @@ void tridifMatriz(int Matriz3D[profundidad][fila][columna])
 int main()
 {
     printf("***** MATRIZ TRIDIMENSIONAL******\n");
+    printf("\n");
     printf("Ingrese el numero de filas: \n");
     scanf("%d", &fila);
     printf("Ingrese el numero de columna: \n");
